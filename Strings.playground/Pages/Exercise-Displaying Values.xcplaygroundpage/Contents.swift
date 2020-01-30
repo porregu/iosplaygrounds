@@ -21,9 +21,6 @@ let video = 150
 let space = (iphone - iphonestuff ) / video
 let minutes = "this is the amount of minutes you can record  \( space) minutes"
 
-
-
-
 /*:
  
  _Copyright © 2017 Apple Inc._
