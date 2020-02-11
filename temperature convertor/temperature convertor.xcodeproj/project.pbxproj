@@ -40,6 +40,7 @@
 		B39076BA23EC50810090D3F0 = {
 			isa = PBXGroup;
 			children = (
+				B39076CF23EC50820090D3F0 /* Assets.xcassets */,
 				B39076C523EC50810090D3F0 /* temperature convertor */,
 				B39076C423EC50810090D3F0 /* Products */,
 			);
@@ -60,7 +61,6 @@
 				B39076C823EC50810090D3F0 /* SceneDelegate.swift */,
 				B39076CA23EC50810090D3F0 /* ViewController.swift */,
 				B39076CC23EC50810090D3F0 /* Main.storyboard */,
-				B39076CF23EC50820090D3F0 /* Assets.xcassets */,
 				B39076D123EC50820090D3F0 /* LaunchScreen.storyboard */,
 				B39076D423EC50820090D3F0 /* Info.plist */,
 			);
@@ -285,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VML43M3U4;
 				INFOPLIST_FILE = "temperature convertor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VML43M3U4;
 				INFOPLIST_FILE = "temperature convertor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
