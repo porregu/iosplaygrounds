@@ -51,6 +51,10 @@
                                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="nuerb1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRj-ue-Q5S"/>
+                                                                    <action selector="number1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgm-4c-VAb"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7W-EQ-YJL">
                                                                 <rect key="frame" x="104" y="0.0" width="102.5" height="136"/>
@@ -225,6 +229,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="number1" destination="rZy-Mp-skT" id="fjZ-vV-v4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
