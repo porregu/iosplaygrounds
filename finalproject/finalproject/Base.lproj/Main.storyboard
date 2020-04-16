@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hbo-2O-x3f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bg1-ae-Nxc">
+            <objects>
+                <viewController id="Hbo-2O-x3f" customClass="ViewController" customModule="finalproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hjt-47-Vos">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEA-di-r0D">
+                                <rect key="frame" x="319" y="80" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="makeNewCarpet:" destination="Hbo-2O-x3f" eventType="touchUpInside" id="3QE-sY-sC7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jGj-XA-b8v">
+                                <rect key="frame" x="146" y="433" width="122" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ9-7S-XPB">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-HX-bPo">
+                                        <rect key="frame" x="76" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="vAJ-t7-Ftm" kind="show" id="Bx1-Ny-hBX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jGj-XA-b8v" firstAttribute="centerX" secondItem="hjt-47-Vos" secondAttribute="centerX" id="E1g-6o-it9"/>
+                            <constraint firstItem="jGj-XA-b8v" firstAttribute="centerY" secondItem="hjt-47-Vos" secondAttribute="centerY" id="urG-LD-Pw7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aIT-3d-jHQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q4o-4b-7RY"/>
+                    <connections>
+                        <segue destination="vAJ-t7-Ftm" kind="show" identifier="Newcarpet" id="Gh1-c4-ytf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-TI-kgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="104"/>
+        </scene>
+        <!--Viewcarpet View Controller-->
+        <scene sceneID="pSz-db-o7u">
+            <objects>
+                <viewController id="GC6-jl-4qc" customClass="ViewcarpetViewController" customModule="finalproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M0v-BY-Ufc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7x-Xh-aiP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wq7-1w-B4W" firstAttribute="bottom" secondItem="q7x-Xh-aiP" secondAttribute="bottom" id="Wp9-zA-EFw"/>
+                            <constraint firstItem="q7x-Xh-aiP" firstAttribute="top" secondItem="wq7-1w-B4W" secondAttribute="top" id="ck9-yx-rUc"/>
+                            <constraint firstItem="wq7-1w-B4W" firstAttribute="trailing" secondItem="q7x-Xh-aiP" secondAttribute="trailing" id="rgq-RQ-BrF"/>
+                            <constraint firstItem="q7x-Xh-aiP" firstAttribute="leading" secondItem="wq7-1w-B4W" secondAttribute="leading" id="yEm-mA-Y5d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wq7-1w-B4W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HKz-rb-7Yv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAd-1a-emD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="104"/>
+        </scene>
+        <!--Newcarpet View Controller-->
+        <scene sceneID="n4P-4l-V48">
+            <objects>
+                <viewController id="vAJ-t7-Ftm" customClass="NewcarpetViewController" customModule="finalproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XU5-IX-Hm1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVC-2P-FQ8">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-9l-1bM">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="GC6-jl-4qc" kind="show" id="AXy-Bk-h6G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-Ru-jtV">
+                                <rect key="frame" x="319" y="80" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-J5-Yv4">
+                                <rect key="frame" x="74" y="17" width="265" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0nf-BL-VZg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hXm-iP-SSW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zY6-4H-V5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gh1-c4-ytf"/>
+    </inferredMetricsTieBreakers>
+</document>
