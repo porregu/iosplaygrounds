@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:finalproject.xcodeproj">
+      location = "group:../../../AVCam Swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

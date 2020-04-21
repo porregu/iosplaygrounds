@@ -16,17 +16,4 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func makeNewCarpet(_ sender: UIButton) {
-        // Open Camera to get Picture
-        // Save picture as a variable
-        // prepare segue to newCarpetVewController
-        // pass the picture to newCarpetviewController
-        
-        performSegue(withIdentifier: "Newcarpet", sender: <#T##Any?#>)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Write the code to pass the picture information to the new view controller
-    }
 }
-

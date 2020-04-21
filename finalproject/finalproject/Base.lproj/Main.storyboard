@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hbo-2O-x3f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEA-di-r0D">
-                                <rect key="frame" x="319" y="80" width="46" height="30"/>
+                                <rect key="frame" x="319" y="80" width="46" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="makeNewCarpet:" destination="Hbo-2O-x3f" eventType="touchUpInside" id="3QE-sY-sC7"/>
+                                    <segue destination="vAJ-t7-Ftm" kind="show" id="geb-s1-Myb"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jGj-XA-b8v">
@@ -33,9 +33,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-HX-bPo">
                                         <rect key="frame" x="76" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="vAJ-t7-Ftm" kind="show" id="Bx1-Ny-hBX"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -48,18 +45,15 @@
                         <viewLayoutGuide key="safeArea" id="aIT-3d-jHQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="q4o-4b-7RY"/>
-                    <connections>
-                        <segue destination="vAJ-t7-Ftm" kind="show" identifier="Newcarpet" id="Gh1-c4-ytf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-TI-kgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="104"/>
+            <point key="canvasLocation" x="-188.40579710144928" y="103.79464285714285"/>
         </scene>
-        <!--Viewcarpet View Controller-->
+        <!--View Controller-->
         <scene sceneID="pSz-db-o7u">
             <objects>
-                <viewController id="GC6-jl-4qc" customClass="ViewcarpetViewController" customModule="finalproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GC6-jl-4qc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0v-BY-Ufc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +92,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
+                                            <action selector="Takenewpic:" destination="vAJ-t7-Ftm" eventType="touchUpInside" id="u11-lp-vMb"/>
                                             <segue destination="GC6-jl-4qc" kind="show" id="AXy-Bk-h6G"/>
                                         </connections>
                                     </button>
@@ -117,13 +112,13 @@
                         <viewLayoutGuide key="safeArea" id="0nf-BL-VZg"/>
                     </view>
                     <navigationItem key="navigationItem" id="hXm-iP-SSW"/>
+                    <connections>
+                        <outlet property="picture" destination="OkZ-J5-Yv4" id="eis-wo-l86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zY6-4H-V5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="647.82608695652175" y="103.79464285714285"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Gh1-c4-ytf"/>
-    </inferredMetricsTieBreakers>
 </document>
