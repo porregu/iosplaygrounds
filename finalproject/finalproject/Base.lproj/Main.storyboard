@@ -36,6 +36,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-BE-w3l">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Fwc-HH-aHE">
+                                        <barButtonItem key="backBarButtonItem" title="back " id="6i7-3Q-PQ8"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -49,33 +58,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-TI-kgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-188.40579710144928" y="103.79464285714285"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pSz-db-o7u">
-            <objects>
-                <viewController id="GC6-jl-4qc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="M0v-BY-Ufc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7x-Xh-aiP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wq7-1w-B4W" firstAttribute="bottom" secondItem="q7x-Xh-aiP" secondAttribute="bottom" id="Wp9-zA-EFw"/>
-                            <constraint firstItem="q7x-Xh-aiP" firstAttribute="top" secondItem="wq7-1w-B4W" secondAttribute="top" id="ck9-yx-rUc"/>
-                            <constraint firstItem="wq7-1w-B4W" firstAttribute="trailing" secondItem="q7x-Xh-aiP" secondAttribute="trailing" id="rgq-RQ-BrF"/>
-                            <constraint firstItem="q7x-Xh-aiP" firstAttribute="leading" secondItem="wq7-1w-B4W" secondAttribute="leading" id="yEm-mA-Y5d"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="wq7-1w-B4W"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HKz-rb-7Yv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VAd-1a-emD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1464" y="104"/>
         </scene>
         <!--Newcarpet View Controller-->
         <scene sceneID="n4P-4l-V48">
@@ -93,20 +75,24 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="Takenewpic:" destination="vAJ-t7-Ftm" eventType="touchUpInside" id="u11-lp-vMb"/>
-                                            <segue destination="GC6-jl-4qc" kind="show" id="AXy-Bk-h6G"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-Ru-jtV">
-                                <rect key="frame" x="319" y="80" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-J5-Yv4">
                                 <rect key="frame" x="74" y="17" width="265" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-Tc-UWR">
+                                <rect key="frame" x="376" y="79" width="17" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-Ru-jtV">
+                                <rect key="frame" x="347" y="79" width="46" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0nf-BL-VZg"/>
@@ -118,7 +104,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zY6-4H-V5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.82608695652175" y="103.79464285714285"/>
+            <point key="canvasLocation" x="581" y="104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vnl-7j-MGc">
+            <objects>
+                <viewController id="GjX-LQ-sny" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEn-uZ-YwY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5ef-nK-96X">
+                                <rect key="frame" x="300" y="44" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9KS-mj-9Q3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRL-Mg-IPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="110"/>
         </scene>
     </scenes>
 </document>
