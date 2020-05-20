@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate {
-    @IBOutlet var carpets: [UIButton]!
+    
+    @IBOutlet var carpets: [UIImageView]!
     var newCarpets = Carpet(images: [UIImage]())
     
     override func viewDidLoad() {
@@ -48,8 +49,8 @@ UINavigationControllerDelegate {
             // TODO: create new carpet
             // add the image to the carpet images array
             for carpet in carpets {
-                if carpet.currentImage == nil {
-                    carpet.setImage(pickedImage, for: .normal)
+                if carpet.image == nil {
+                    carpet.image = pickedImage
                     break
                 }
             }
